@@ -21,7 +21,9 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score
 
-### Repository Link
+### Screenshot
+![Code Quiz Screenshot](/images/CodeQuiz)
 
 
 ### Deployment Link
+https://mkaye97.github.io/Code-Quiz/
