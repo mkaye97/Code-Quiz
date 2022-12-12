@@ -2,8 +2,12 @@ var timeRemaining = $('#timer');
 var startButton = $('#startbutton');
 var highScore = $('#highscore');
 var card = $('#card');
-var questionLines = $('#qLines');
-var textLines = $('#line')
+var quizBox = $('#quizbox');
+var qLine = $('#q');
+var aLine = $('#a');
+var bLine = $('#b');
+var cLine = $('#c');
+var dLine = $('#d');
 var nextButton = $('#next');
 
 
@@ -56,7 +60,7 @@ function startQuiz() {
     // Removes 'Start' and 'High Score' buttons and starts timer.
     $('#initialbuttons').remove();
     setTime();
-    $('#qlist').removeClass("d-none");
+    quizBox.removeClass("d-none");
     quiz();
 }
 
@@ -75,11 +79,18 @@ function setTime() {
     }, 1000)};
 
 function quiz() {
-
+  var i = 0;
+    qLine.text(questions[i].question);
+    aLine.text(questions[i].answers[0]);
+    bLine.text(questions[i].answers[1]);
+    cLine.text(questions[i].answers[2]);
+    dLine.text(questions[i].answers[3]);
 }
 
 function selectAnswer() {
 
-};
+}
 
 startButton.on('click', startQuiz);
+
+nextButton.on('click')
